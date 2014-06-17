@@ -1,0 +1,106 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 3
+
+   Civil War History Text and Color Style
+   Author: Christopher A. Caswell
+   Date: 05/29/2014
+
+   Filename:         cw_styles.css
+   Supporting Files: cw_layout.css
+
+*/@import url('cw_layout.css'); /*Import a predesigned layout/
+
+/* Body Styles */
+
+body {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	}
+
+/* Heading Sytles */
+
+h1, h2, h3, h4, h5, h6 {
+	color: hsla(212, 0%, 0%, 0.4);
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-indent: 5px;
+	}
+
+body > header h1 {
+	background-color: hsl(212, 100%, 29%);
+	}
+	
+/* Navigation List Styles */
+
+.horizontal ul {
+	font-family: 'Century Gothic MS', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	line-height: 20px;
+	list-style-type: none
+	}
+	
+.horizontal ul li a { 
+	color:hsl(212, 100%, 70%);
+	text-decoration: none;
+	}
+	
+.horizontal ul li a:hover {
+	color:hsl(212, 100%, 29%);
+	}
+	
+.vertical {
+	background-color:hsl(32, 100%, 95%);
+	} 
+	
+.vertical h4 {
+	color:hsla(32, 0%, 0%, 0.5);
+	font-size: 18px;
+	text-indent: 15px;
+	}
+
+.vertical ol {
+	list-style-type: upper-roman;
+	}
+	
+.vertical ol ol {
+	list-style-type: upper-alpha;
+	}
+	
+.vertical ol {
+	line-height: 2em;
+	}
+	
+.vertical ol li a { 
+	color:hsla(212, 100%, 29%, 0.6);
+	text-decoration: none;
+	}
+	
+.vertical ol li a:hover {
+	color:hsla(212, 100%, 29%, 1.0);
+	text-decoration:underline;
+	}
+
+/* Section Styles */
+
+section {
+	background-color:hsl(212, 95%, 90%);
+	}
+
+/* Article Styles */
+
+article p:first-of-type:first-letter {
+	font-size: 32px;
+	}
+
+/* Footer Styles */
+
+footer p {
+	font-size: 10px;
+	line-height: 30px;
+	text-align: center;
+	}
+	
